@@ -48,7 +48,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     if (btnCerrar) {
         btnCerrar.addEventListener("click", function(event) {
-            event.preventDefault(); 
+            event.preventDefault(); // Previene el comportamiento predeterminado del enlace
             signOut(auth).then(() => {
                 window.location.href = "login.html";
             }).catch((error) => {

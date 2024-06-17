@@ -1,6 +1,6 @@
 import { initializeApp } from 'https://www.gstatic.com/firebasejs/9.1.3/firebase-app.js';
 import { getAnalytics } from 'https://www.gstatic.com/firebasejs/9.1.3/firebase-analytics.js';
-import { getAuth, setPersistence, signInWithEmailAndPassword, browserLocalPersistence } from 'https://www.gstatic.com/firebasejs/9.1.3/firebase-auth.js';
+import { getAuth, setPersistence, signInWithEmailAndPassword, browserLocalPersistence, signOut } from 'https://www.gstatic.com/firebasejs/9.1.3/firebase-auth.js';
 
 const firebaseConfig = {
     apiKey: "AIzaSyCbxOOuzZQeLkXbaIkNL4Y1vtQQu0eVgBg",
@@ -15,7 +15,6 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 const analytics = getAnalytics(app);
 const auth = getAuth(app);
-setPersistence(auth, browserLocalPersistence);
 
 document.getElementById("boton-login").addEventListener("click", function() {
     const email = document.getElementById("email").value;
@@ -24,7 +23,6 @@ document.getElementById("boton-login").addEventListener("click", function() {
     if (email !== "" && password !== "") {
         signInWithEmailAndPassword(auth, email, password)
             .then((userCredential) => {
-                // Signed in
                 const user = userCredential.user;
                 window.location.href = "blog.html";
             })
@@ -40,8 +38,4 @@ document.getElementById("boton-login").addEventListener("click", function() {
     }
 });
 
-auth.onAuthStateChanged((user) => {
-    if (user) {
-        window.location.href = "blog.html";
-    }
-});
+
