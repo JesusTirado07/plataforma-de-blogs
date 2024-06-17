@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <script src="https://www.gstatic.com/firebasejs/9.1.3/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.1.3/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.1.3/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.1.3/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.1.3/firebase-storage.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.1.3/firebase-analytics.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="fonts/material-design-iconic-font/css/material-design-iconic-font.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="wrapper" style="background-image: url(images/loginback.jpg);">
+        <div class="inner">
+            <div class="image-holder">
+                <img src="images/login.jpg" alt="Login image" height="500" width="700">
+            </div>
+            <form action="">
+                <h3>Login</h3>
+                <div class="form-wrapper">
+                    <input type="email" id="email" placeholder="Ingrese el email" class="form-control">
+                    <i class="zmdi zmdi zmdi-email"></i>
+                </div>
+                <div class="form-wrapper">
+                    <input type="password" id="password" placeholder="Ingrese Contraseña" class="form-control">
+                    <i class="zmdi zmdi zmdi-lock"></i>
+                </div>
+                <div class="form-group container-login100-form-btn">
+                    <button id="boton-login" type="button">
+                        Iniciar Sesion
+                    </button>
+                </div>
+                <div class="w-full text-center p-t-27 p-b239">
+                    <a href="recuperarcontraseña.html">¿Recuperar contraseña?</a>
+                </div>
+                <div class="w-full text-center" style="margin-top: 20%; font-size: 20px;">
+                    <a href="iniciar.html">¿No tienes una cuenta?</a>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    
+    <head><script type="module" src="js/index.js"></script></head>
+
+</body>
+</html>
