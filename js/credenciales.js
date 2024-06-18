@@ -3,6 +3,7 @@ export class Credenciales {
         return {
             apiKey: "AIzaSyCbxOOuzZQeLkXbaIkNL4Y1vtQQu0eVgBg",
             authDomain: "blog-tirus.firebaseapp.com",
+            databaseURL: "https://blog-tirus-default-rtdb.firebaseio.com/",
             projectId: "blog-tirus",
             storageBucket: "blog-tirus.appspot.com",
             messagingSenderId: "844425709875",

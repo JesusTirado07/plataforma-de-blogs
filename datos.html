@@ -17,6 +17,71 @@
 </head>
 <body>
 
+    <div class="wrapper" style="background-image: url('images/accountSettingsback.jpg');">
+
+        <div class="inner">
+
+            <div class="image-holder">
+                <img src="images/asettings.jpg" alt="Imagen-de-regitro">
+            </div>
+
+            <form action="">
+                <h3>Complete sus Datos</h3>
+
+                <div class="form-group">
+                    <input type="text" id="nombre" placeholder="Ingrese su nombre" class="form-control">
+                    <input type="text" id="apellido" placeholder="Ingrese su apellido" class="form-control">
+                </div>
+
+                <div class="form-wrapper">
+                    <select name="" id="ciudad" class="form-control" title="ciudad">
+                        <option value="" disabled selected>Ciudad</option>
+                        <option value="Merida">Merida</option>
+                        <option value="Chemax">Chemax</option>
+                        <option value="Conkal">Conkal</option>
+                        <option value="Kanasín">Kanasín</option>
+                        <option value="Abala">Abala</option>
+                        <option value="Ixil">Ixil</option>
+                    </select>
+                    <i class="zmdi zmdi-caret-down" style="font-size: 17px;"></i>
+                </div>
+
+                <div class="form-wrapper">
+                    <input type="number" id="phone" placeholder="Telefono" class="form-control">
+                    <i class="zmdi zmdi-table-mac"></i>
+                </div>
+
+                <div class="form-wrapper">
+                    <select name="" id="genero" class="form-control" title="ciudad">
+                        <option value="" disabled selected>Genero</option>
+                        <option value="Masculino">Hombre</option>
+                        <option value="Femenino">Mujer</option>
+                    </select>
+                    <i class="zmdi zmdi-caret-down" style="font-size: 17px;"></i>
+                </div>
+
+                <div class="form-wrapper">
+                    <input type="text" id="descripcion" placeholder="Descripcion" class="form-control">
+                    <i class="zmdi zmdi zmdi-email"></i>
+                </div>
+
+                <div class="form-group container-login100-form-btn">
+                    <button id="boton-datos" type="button">
+                        Finalizar Registro
+                    </button>
+                </div>
+
+
+            </form>
+
+
+        </div>
+
+    </div>
+
+    <script type="module" src="js/credenciales.js"></script>
+    <script type="module" src="js/datosdeusuario.js"></script>
+
     
 </body>
 </html>
