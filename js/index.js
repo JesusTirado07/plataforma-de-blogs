@@ -1,16 +1,9 @@
 import { initializeApp } from 'https://www.gstatic.com/firebasejs/9.1.3/firebase-app.js';
 import { getAnalytics } from 'https://www.gstatic.com/firebasejs/9.1.3/firebase-analytics.js';
 import { getAuth, setPersistence, signInWithEmailAndPassword, browserLocalPersistence, signOut } from 'https://www.gstatic.com/firebasejs/9.1.3/firebase-auth.js';
+import { Credenciales } from './credenciales.js';
 
-const firebaseConfig = {
-    apiKey: "AIzaSyCbxOOuzZQeLkXbaIkNL4Y1vtQQu0eVgBg",
-    authDomain: "blog-tirus.firebaseapp.com",
-    projectId: "blog-tirus",
-    storageBucket: "blog-tirus.appspot.com",
-    messagingSenderId: "844425709875",
-    appId: "1:844425709875:web:94b5881b4de9a68f77d646",
-    measurementId: "G-7DDDLYJ0VP"
-};
+const firebaseConfig = Credenciales.getFirebaseConfig();
 
 const app = initializeApp(firebaseConfig);
 const analytics = getAnalytics(app);
