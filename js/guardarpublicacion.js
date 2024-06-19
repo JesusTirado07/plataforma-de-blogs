@@ -42,16 +42,38 @@ function saveInformation() {
 }
 
 function saveToDatabase(description, imageUrl) {
-    const newPostKey = push(dbRef(database, 'posts')).key;
-    set(dbRef(database, 'posts/' + newPostKey), {
+
+    const newPostKey = push(dbRef(database, 'Publicaciones')).key;
+
+    set(dbRef(database, 'Publicaciones/' + newPostKey), {
+        
         description: description,
         imageUrl: imageUrl
+
     }).then(() => {
+
         alert('Publicación guardada exitosamente.');
-        document.getElementById('main-form').reset();
-        document.getElementById('upload-progress').style.width = '0%';
-        document.getElementById('upload-progress').innerText = '0%';
+
+        resetForm();
+
     }).catch((error) => {
+
         console.error('Error al guardar la publicación:', error);
+
     });
+
+}
+
+function resetForm() {
+
+    document.getElementById('main-form').reset();
+
+    document.getElementById('upload-progress').style.width = '0%';
+
+    document.getElementById('upload-progress').innerText = '0%';
+
+    document.getElementById('main-desc').value = ''; 
+
+    document.getElementById('main-image').value = '';
+
 }
