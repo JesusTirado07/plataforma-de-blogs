@@ -228,7 +228,6 @@
       box-sizing: border-box; 
   }
   
-/* General styles */
 body, html {
   height: 100%;
   margin: 0;
@@ -239,14 +238,12 @@ body, html {
   margin-bottom: 20px;
 }
 
-/* Container styles */
 .imagen {
   max-width: 800px;
   margin: auto;
   padding: 20px;
 }
 
-/* Publication styles */
 .publication {
   background-color: #f9f9f9;
   border: 1px solid #ddd;
@@ -277,7 +274,6 @@ body, html {
   margin-bottom: 10px;
 }
 
-/* Progress bar styles */
 .custom-progress-container {
   height: 30px;
   border-radius: 5px;
@@ -289,4 +285,16 @@ body, html {
   border-radius: 5px;
   text-align: center;
   line-height: 30px;
+}
+
+.delete-button {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  width: 15;
+  height: 30px;
+  margin-top: 10px;
+  border-radius: 5px;
+  cursor: pointer;
 }

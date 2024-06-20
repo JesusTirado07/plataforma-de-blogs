@@ -53,7 +53,7 @@ function saveToDatabase(description, imageUrl) {
     }).then(() => {
 
         alert('Publicación guardada exitosamente.');
-
+        location.reload();
 
     }).catch((error) => {
 
