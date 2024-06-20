@@ -54,7 +54,6 @@ function saveToDatabase(description, imageUrl) {
 
         alert('Publicación guardada exitosamente.');
 
-        resetForm();
 
     }).catch((error) => {
 
@@ -64,16 +63,3 @@ function saveToDatabase(description, imageUrl) {
 
 }
 
-function resetForm() {
-
-    document.getElementById('main-form').reset();
-
-    document.getElementById('upload-progress').style.width = '0%';
-
-    document.getElementById('upload-progress').innerText = '0%';
-
-    document.getElementById('main-desc').value = ''; 
-
-    document.getElementById('main-image').value = '';
-
-}
