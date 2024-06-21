@@ -66,7 +66,7 @@
   .form-group {
     display: flex; }
     .form-group input { 
-      width: 5000000%;}
+      width: 50000000%;}
       .form-group input:first-child {
         margin-right: 25px; }
         
@@ -77,6 +77,17 @@
       position: absolute;
       bottom: 9px;
       right: 0; }
+
+  .form-descripcion{
+    border: 1px solid #333;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    display: block;
+    width: 100%;
+    height: 100px;
+    padding: 0;
+    margin-bottom: 25px; }
   
   .form-control {
     border: 1px solid #333;
@@ -85,7 +96,7 @@
     border-left: none;
     display: block;
     width: 100%;
-    height: 100px;
+    height: 40px;
     padding: 0;
     margin-bottom: 25px; }
     .form-control::-webkit-input-placeholder {

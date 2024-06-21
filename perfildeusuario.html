@@ -4,16 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Perfil</title>
+    <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-storage.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-analytics.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E=" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/Perfil.css">
 </head>
 <body>
-    <div>
-        <h1>Perfil de Usuario</h1>
-        <p><strong>Nombre:</strong> <span id="nombre"></span></p>
-        <p><strong>Apellido:</strong> <span id="apellido"></span></p>
-        <p><strong>Ciudad:</strong> <span id="ciudad"></span></p>
-        <p><strong>Teléfono:</strong> <span id="telefono"></span></p>
-        <p><strong>Género:</strong> <span id="genero"></span></p>
-        <p><strong>Descripción:</strong> <span id="descripcion"></span></p>
+    <div class="profile-container">
+        <div class="profile-header">
+            <img src="images/pefil.jpeg" alt="Foto de Perfil" class="profile-pic">
+            <h1 class="titulousuario">Perfil de Usuario</h1>
+        </div>
+        <div class="profile-details">
+            <p><strong>Nombre:</strong> <span id="nombre">Juan</span></p>
+            <p><strong>Apellido:</strong> <span id="apellido">Pérez</span></p>
+            <p><strong>Ciudad:</strong> <span id="ciudad">Madrid</span></p>
+            <p><strong>Teléfono:</strong> <span id="telefono">+34 123 456 789</span></p>
+            <p><strong>Género:</strong> <span id="genero">Masculino</span></p>
+            <p><strong>Descripción:</strong> <span id="descripcion">Desarrollador de software con 10 años de experiencia en desarrollo web.</span></p>
+        </div>
     </div>
     <script type="module" src="js/verdatosdeusuario.js"></script>
 </body>
