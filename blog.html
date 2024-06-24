@@ -54,7 +54,7 @@
             </button>
 
             <div class="dropdown-menu" aria-labelledby="opciones_id">
-                <a class="dropdownn-item text-center" id="btn-cerrar" href="#" > Cerrar Seion</a>
+                <a class="dropdownn-item text-center" id="btn-cerrar" href="#" > Cerrar Sesión</a>
             </div>
             
         </div>
@@ -130,11 +130,44 @@
         </div>
     </div>
 
+    <div class="modal fade" id="editModal" tabindex="-1" role="dialog" aria-labelledby="editModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="editModalLabel">Editar Publicación</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form id="edit-form">
+              <div class="form-group">
+                <label for="edit-desc">Descripción</label>
+                <textarea class="form-control" id="edit-desc" rows="3"></textarea>
+              </div>
+              <div class="form-group">
+                <label for="edit-image">Imagen</label>
+                <input type="file" class="form-control-file" id="edit-image">
+              </div>
+              <div class="form-group text-center">
+                <img class="centered-image" src="#" id="edit-selected-image" width="250" height="150" title="imagen seleccionada">
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+            <button type="button" class="btn btn-primary" id="save-edit">Guardar Cambios</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <script type="module" src="js/credenciales.js"></script>
     <script type="module" src="js/verimagen.js"></script>
     <script type="module" src="js/guardarpublicacion.js"></script>
     <script type="module" src="js/verpublicacion.js"></script>
     <script type="module" src="js/cerrarsesion.js"></script>
+    <script type="module" src="js/editarpublicacion.js"></script>
 
 </body>
 </html>
